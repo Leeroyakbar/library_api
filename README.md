@@ -11,23 +11,23 @@
    - Endpoint : `/api/books`
    - Method   : POST
    - Body
-     ```
-           {
-             "title" : "string",
-             "author" : "string",
-             "yearPublished" : "string"
-           }
+     ```JSON
+     {
+        "title" : "string",
+        "author" : "string",
+        "yearPublished" : "string"
+     }
      ```
    - Response
+     ```JSON
+     {
+        "statusCode": 201,
+        "message": "successfully created data",
+        "data": {
+           "id": "5bbc0a9a-e4df-4eaa-af47-60cfbaffb2cf",
+           "title": "seni untuk bersikap bodo amat",
+           "author": "mark manson",
+           "yearPublished": "2022"
+         }
+     }
      ```
-           {
-                "statusCode": 201,
-                "message": "successfully created data",
-                "data": {
-                    "id": "5bbc0a9a-e4df-4eaa-af47-60cfbaffb2cf",
-                    "title": "seni untuk bersikap bodo amat",
-                    "author": "mark manson",
-                    "yearPublished": "2022"
-                }
-            }
-        ```
