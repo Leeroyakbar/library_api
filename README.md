@@ -8,28 +8,26 @@
 ## Endpoint Usage
 ---
 1. Create New Book
-   |----------|-------------|
-   | Endpoint | `api/books` |
-   | Method | POST |
-   | Header | `- Content-Type : application/json`
-              `- Accept : application/json`  |
-   | Body | ```
-             {
-                "title" : "string",
-                "author" : "string",
-                "yearPublished" : "string"
-             }
-           ``` |
-   | Response | ```
-                  {
-                      "statusCode": int,
-                      "message": "string",
-                      "data": {
-                          "id": "string",
-                          "title": "string",
-                          "author": "string",
-                          "yearPublished": "string"
-                      }
-                  }
-
-                 ``` |
+   - Endpoint : `/api/books`
+   - Method   : POST
+   - Body
+     ```
+           {
+             "title" : "string",
+             "author" : "string",
+             "yearPublished" : "string"
+           }
+     ```
+   - Response
+     ```
+           {
+                "statusCode": 201,
+                "message": "successfully created data",
+                "data": {
+                    "id": "5bbc0a9a-e4df-4eaa-af47-60cfbaffb2cf",
+                    "title": "seni untuk bersikap bodo amat",
+                    "author": "mark manson",
+                    "yearPublished": "2022"
+                }
+            }
+        ```
