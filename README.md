@@ -8,6 +8,7 @@
 ## Endpoint Usage
 ---
 1. Create New Book
+   |----------|-------------|
    | Endpoint | `api/books` |
    | Method | POST |
    | Header | `- Content-Type : application/json`
