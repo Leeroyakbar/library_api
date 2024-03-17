@@ -22,7 +22,7 @@ public interface BookRepository extends JpaRepository<Book, String> {
     Book getOneById(String id);
 
     @Modifying
-    @Query(value = "UPDATE m_book mb " +
+    @Query(value = "UPDATE m_book " +
             "SET title = ?2, " +
             "author = ?3, " +
             "year_published = ?4 " +

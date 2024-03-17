@@ -17,7 +17,7 @@ public class ErrorController {
 
         if(e.getMessage().contains("foreign key constraint")){
             builder.statusCode(HttpStatus.BAD_REQUEST.value())
-                    .message("cant delete data because there is reference from other table");
+                    .message("cant save data because book or member is not present");
             httpStatus  = HttpStatus.BAD_REQUEST;
         }else if(e.getMessage().contains("unique constraint") || e.getMessage().contains("already exist")){
             builder.statusCode(HttpStatus.CONFLICT.value())

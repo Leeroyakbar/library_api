@@ -26,9 +26,12 @@ public class Borrower {
     @JoinColumn(name = "book_id", nullable = false)
     private Book book;
 
-    @Column(name = "loan_date", nullable = false)
+    @Column(name = "loan_date")
     private Date loanDate;
 
-    @Column(name = "date_of_return", nullable = false)
+    @Column(name = "date_of_return")
     private Date dateOfReturn;
+
+    @Column(name = "status", nullable = false)
+    private String status;
 }
