@@ -31,3 +31,81 @@
          }
      }
      ```
+2. Get Book
+   - Endpoint : `/api/books/{id}`
+   - Method   : GET
+   - Response :
+     ```JSON
+     {
+        "statusCode": 200,
+        "message": "successfully get data",
+        "data": {
+           "id": "d7e7eee1-2512-43ea-8c1a-96e872a5f886",
+           "title": "segala galanya ambyar",
+           "author": "mark manson",
+           "yearPublished": "2022"
+        }
+     }
+     ```
+
+4. Get All Books
+   - Endpoint : `/api/books`
+   - Method   : GET
+   - Response :
+     ```JSON
+     {
+       "statusCode": 200,
+       "message": "successfully get data",
+       "data": [
+           {
+               "id": "d7e7eee1-2512-43ea-8c1a-96e872a5f886",
+               "title": "segala galanya ambyar",
+               "author": "mark manson",
+               "yearPublished": "2022"
+           },
+           {
+               "id": "5bbc0a9a-e4df-4eaa-af47-60cfbaffb2cf",
+               "title": "seni untuk bersikap bodo amat",
+               "author": "mark manson",
+               "yearPublished": "2022"
+           }
+       ]
+      }
+     ```
+5. Update Book
+   - Endpoint : `/api/books`
+   - Method   : PUT
+   - Body     :
+     ```JSON
+     {
+          "id": "5bbc0a9a-e4df-4eaa-af47-60cfbaffb2cf",
+          "title": "seni untuk bersikap bodo amat",
+          "author": "mark manson",
+          "yearPublished": "2018"
+      }
+     ```
+   - Response   :
+     ```JSON
+      {
+          "statusCode": 201,
+          "message": "successfully updated data",
+          "data": {
+              "id": "5bbc0a9a-e4df-4eaa-af47-60cfbaffb2cf",
+              "title": "seni untuk bersikap bodo amat",
+              "author": "mark manson",
+              "yearPublished": "2018"
+          }
+      }
+     ```
+7. Delete Book By ID
+   - Endpoint   : `api/books/{id}`
+   - Method     : DELETE
+   - Response   :
+     ```JSON
+      {
+          "statusCode": 200,
+          "message": "successfully deleted data",
+          "data": null
+      }
+     ```
+     
