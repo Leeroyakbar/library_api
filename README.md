@@ -7,7 +7,7 @@
 
 ## Endpoint Usage
 ---
-1. Create New Book
+#### Create New Book
    - Endpoint : `/api/books`
    - Method   : POST
    - Body
@@ -31,7 +31,7 @@
          }
      }
      ```
-2. Get Book
+#### Get Book
    - Endpoint : `/api/books/{id}`
    - Method   : GET
    - Response :
@@ -48,7 +48,7 @@
      }
      ```
 
-4. Get All Books
+#### Get All Books
    - Endpoint : `/api/books`
    - Method   : GET
    - Response :
@@ -72,7 +72,7 @@
        ]
       }
      ```
-5. Update Book
+#### Update Book
    - Endpoint : `/api/books`
    - Method   : PUT
    - Body     :
@@ -97,7 +97,7 @@
           }
       }
      ```
-7. Delete Book By ID
+#### Delete Book By ID
    - Endpoint   : `api/books/{id}`
    - Method     : DELETE
    - Response   :
@@ -108,4 +108,105 @@
           "data": null
       }
      ```
-     
+---
+
+#### Create New Member
+   - Endpoint   : `/api/members`
+   - Method     : POST
+   - Body       :
+     ```JSON
+      {
+          "name": "lee",
+          "address": "Jl. Topaz No.7",
+          "mobilePhone" : "081234567"
+      }
+     ```
+   - Response   :
+     ```JSON
+      {
+          "statusCode": 201,
+          "message": "successfully created data",
+          "data": {
+              "id": "40bf436e-b6bf-4480-88fb-5d63f3196e76",
+              "name": "lee",
+              "address": "Jl. Topaz No.7",
+              "mobilePhone": "081234567"
+          }
+      }
+     ```
+#### Get Member By ID
+   - Endpoint   : `/api/members/{id}`
+   - Method     : GET
+   - Response   :
+     ```JSON
+      {
+          "statusCode": 200,
+          "message": "successfully get data",
+          "data": {
+              "id": "40bf436e-b6bf-4480-88fb-5d63f3196e76",
+              "name": "lee",
+              "address": "Jl. Topaz No.7",
+              "mobilePhone": "081234567"
+          }
+      }
+     ```
+#### Get All Members
+   - Endpoint   : `/api/members`
+   - Method     : GET
+   - Response   :
+     ```JSON
+      {
+          "statusCode": 200,
+          "message": "successfully get data",
+          "data": [
+              {
+                  "id": "f08efbb6-116d-48a5-b8da-89da18a0bb5d",
+                  "name": "roy",
+                  "address": "Jl. Topaz No.7",
+                  "mobilePhone": "089912356"
+              },
+              {
+                  "id": "40bf436e-b6bf-4480-88fb-5d63f3196e76",
+                  "name": "lee",
+                  "address": "Jl. Topaz No.7",
+                  "mobilePhone": "081234567"
+              }
+          ]
+      }
+     ```
+#### Update Member
+   - Endpoint   : `/api/members`
+   - Method     : PUT
+   - Body       :
+     ```JSON
+     {
+        "id": "40bf436e-b6bf-4480-88fb-5d63f3196e76",
+        "name": "lee roy",
+        "address": "Jl. Topaz No.7",
+        "mobilePhone": "081234567"
+     }
+     ```
+   - Response    :
+     ```JSON
+      {
+          "statusCode": 201,
+          "message": "successfully updated data",
+          "data": {
+              "id": "40bf436e-b6bf-4480-88fb-5d63f3196e76",
+              "name": "lee",
+              "address": "Jl. Topaz No.7",
+              "mobilePhone": "081234567"
+          }
+      }
+     ```
+#### Delete Member By ID
+   - Endpoint   : `/api/members/{id}`
+   - Method     : DELETE
+   - Response   :
+     ```JSON
+      {
+          "statusCode": 200,
+          "message": "successfully deleted data",
+          "data": null
+      }
+     ```
