@@ -16,12 +16,12 @@ public class Member {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "address")
+    @Column(name = "address", nullable = false)
     private String address;
 
-    @Column(name = "mobile_phone")
+    @Column(name = "mobile_phone", nullable = false)
     private String mobilePhone;
 }
