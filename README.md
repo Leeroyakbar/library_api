@@ -13,9 +13,10 @@
    - Body
      ```JSON
      {
-        "title" : "string",
-        "author" : "string",
-        "yearPublished" : "string"
+         "id": "d7e7eee1-2512-43ea-8c1a-96e872a5f886",
+         "title": "segala galanya ambyar",
+         "author": "mark manson",
+         "yearPublished": "2022"
      }
      ```
    - Response
@@ -31,7 +32,7 @@
          }
      }
      ```
-#### Get Book
+#### Get Book By ID
    - Endpoint : `/api/books/{id}`
    - Method   : GET
    - Response :
