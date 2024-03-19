@@ -13,10 +13,9 @@
    - Body
      ```JSON
      {
-         "id": "d7e7eee1-2512-43ea-8c1a-96e872a5f886",
-         "title": "segala galanya ambyar",
-         "author": "mark manson",
-         "yearPublished": "2022"
+        "title": "seni untuk bersikap bodo amat",
+        "author": "mark manson",
+        "yearPublished": "2022"
      }
      ```
    - Response
